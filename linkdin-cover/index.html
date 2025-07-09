@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Cover - Harsh Vadhel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cover-container {
+            width: 1584px;
+            height: 396px;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+            position: relative;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .code-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #ffffff;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .matrix-effect {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.05) 100%);
+        }
+
+        .matrix-char {
+            position: absolute;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            animation: matrix-fall 3s linear infinite;
+            opacity: 0.3;
+        }
+
+        @keyframes matrix-fall {
+            0% { transform: translateY(-100px); opacity: 0.3; }
+            100% { transform: translateY(500px); opacity: 0; }
+        }
+
+        .main-content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 80px;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .name {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .title {
+            font-size: 24px;
+            color: #cccccc;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .skill-tag {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .tagline {
+            color: #999999;
+            font-size: 16px;
+            max-width: 600px;
+            line-height: 1.4;
+        }
+
+        .visual-elements {
+            position: absolute;
+            right: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 300px;
+            height: 200px;
+        }
+
+        .code-block {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #ffffff;
+            position: absolute;
+            top: 20px;
+            right: 0;
+            width: 280px;
+            backdrop-filter: blur(10px);
+        }
+
+        .binary-stream {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #ffffff 50%, transparent 100%);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        .circuit-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: circuitMove 10s linear infinite;
+        }
+
+        @keyframes circuitMove {
+            0% { background-position: 0 0, 25px 25px; }
+            100% { background-position: 50px 50px, 75px 75px; }
+        }
+
+        .glow-effect {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: glow 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.3; }
+            100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container">
+        <div class="circuit-pattern"></div>
+        <div class="glow-effect"></div>
+
+        <div class="code-background">
+            <div>function innovate() {</div>
+            <div>  while(true) {</div>
+            <div>    code();</div>
+            <div>    learn();</div>
+            <div>    solve();</div>
+            <div>  }</div>
+            <div>}</div>
+            <div></div>
+            <div>const developer = {</div>
+            <div>  name: "Harsh Vadhel",</div>
+            <div>  passion: "Building the future",</div>
+            <div>  status: "Always learning"</div>
+            <div>};</div>
+        </div>
+
+        <div class="matrix-effect">
+            <div class="matrix-char" style="left: 20px; animation-delay: 0s;">1</div>
+            <div class="matrix-char" style="left: 40px; animation-delay: 0.5s;">0</div>
+            <div class="matrix-char" style="left: 60px; animation-delay: 1s;">1</div>
+            <div class="matrix-char" style="left: 80px; animation-delay: 1.5s;">0</div>
+            <div class="matrix-char" style="left: 100px; animation-delay: 2s;">1</div>
+            <div class="matrix-char" style="left: 120px; animation-delay: 0.3s;">0</div>
+            <div class="matrix-char" style="left: 140px; animation-delay: 0.8s;">1</div>
+            <div class="matrix-char" style="left: 160px; animation-delay: 1.3s;">0</div>
+            <div class="matrix-char" style="left: 180px; animation-delay: 1.8s;">1</div>
+        </div>
+
+        <div class="main-content">
+            <div class="text-content">
+                <h1 class="name">HARSH VADHEL</h1>
+                <h2 class="title">Software Developer</h2>
+
+                <div class="skills">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">ML</span>
+                    <span class="skill-tag">DJANGO</span>
+                </div>
+
+                <p class="tagline">
+                    Transforming ideas into elegant code * Building scalable solutions * Passionate about innovation and clean architecture
+                </p>
+            </div>
+
+            <div class="visual-elements">
+                <div class="code-block">
+                    <div style="color: #cccccc;">class</div>
+                    <div style="color: #ffffff;">  SoftwareDeveloper {</div>
+                    <div style="color: #aaaaaa;">    constructor() {</div>
+                    <div style="color: #999999;">      this.focus = 'excellence';</div>
+                    <div style="color: #999999;">      this.drive = 'innovation';</div>
+                    <div style="color: #aaaaaa;">    }</div>
+                    <div style="color: #ffffff;">  }</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="binary-stream"></div>
+    </div>
+
+    <script>
+        // Add more dynamic matrix characters
+        function createMatrixChar() {
+            const matrixEffect = document.querySelector('.matrix-effect');
+            const char = document.createElement('div');
+            char.className = 'matrix-char';
+            char.textContent = Math.random() > 0.5 ? '1' : '0';
+            char.style.left = Math.random() * 280 + 'px';
+            char.style.animationDelay = Math.random() * 3 + 's';
+            char.style.animationDuration = (Math.random() * 2 + 2) + 's';
+            matrixEffect.appendChild(char);
+
+            setTimeout(() => {
+                char.remove();
+            }, 5000);
+        }
+
+        // Create matrix characters periodically
+        setInterval(createMatrixChar, 200);
+
+        // Add subtle background animation
+        const codeBackground = document.querySelector('.code-background');
+        let opacity = 0.1;
+        let increasing = true;
+
+        setInterval(() => {
+            if (increasing) {
+                opacity += 0.005;
+                if (opacity >= 0.15) increasing = false;
+            } else {
+                opacity -= 0.005;
+                if (opacity <= 0.05) increasing = true;
+            }
+            codeBackground.style.opacity = opacity;
+        }, 100);
+    </script>
+</body>
+</html>
